@@ -17,7 +17,7 @@ public class SpringTest {
         //在没有实现接口的情况下 class cn.ioc.aop2.service.Impl.UserServiceImpl$$EnhancerBySpringCGLIB$$ee506f3a
         //没有实现代理的类就会用cglib代理
 //        bean.add(new User());
-        bean.select(null);
+        bean.select(1);
 
 
     }

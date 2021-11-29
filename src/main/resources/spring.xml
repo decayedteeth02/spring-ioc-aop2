@@ -9,8 +9,16 @@
     <context:component-scan base-package="cn.ioc.aop2"></context:component-scan>
 
 <!--    使用AOP-->
-    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+<!--    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>-->
+
+    <aop:config>
+        <aop:aspect>
+            <aop:pointcut id="all" expression="execution(* cn.ioc.aop2.service.Impl.*.*(..))"/>
+
+        </aop:aspect>
+        
 
 
+    </aop:config>
 
 </beans>
